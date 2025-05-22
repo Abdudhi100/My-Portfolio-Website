@@ -1,10 +1,13 @@
-// filepath: my-portfolio-frontend/src/app/gallery/page.tsx
+// filepath: c:\Users\owner\DhikrullahAbdullah\DhikrullahAbdullah\portfolio\my-portfolio-frontend\src\app\projects\page.tsx
 import React from "react";
+import Gallery from "../components/Gallery";// Adjust the import path as necessary
 
-export default function GalleryPage() {
+const GalleryPage: React.FC = () => {
   return (
-    <div>
-      {/* Your gallery content here */}
-    </div>
+    
+      <Gallery />
+  
   );
-}
+};
+
+export default GalleryPage;
