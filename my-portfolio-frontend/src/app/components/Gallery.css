@@ -1,0 +1,62 @@
+.gallery-background {
+  background: linear-gradient(135deg, #140b29, #140b29); /* Gradient purple background */
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative; /* Keeps content positioned correctly */
+}
+
+.text-white {
+  color: white;
+}
+
+/* Style for the h1 (name) */
+.gallery-background h1 {
+  font-size: 3rem; /* Slightly larger font size for prominence */
+  font-weight: 800; /* Extra bold font weight for impact */
+  color: #f5f5f5; /* Softer white for elegance */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for better readability */
+  letter-spacing: 2px; /* Add spacing between letters for a modern look */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  margin-bottom: 1.5rem; /* Add more space below the h1 */
+  animation: fadeIn 2s ease-in-out; /* Add a fade-in animation */
+}
+
+/* Style for the h3 (profession) */
+.gallery-background h3 {
+  font-size: 1.6rem; /* Slightly larger font size for better visibility */
+  font-weight: 600; /* Semi-bold for a professional look */
+  color: #e0e0e0; /* Light gray for a softer appearance */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for readability */
+  letter-spacing: 1px; /* Add slight spacing between letters */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-bottom: 1rem; /* Space below each h3 */
+  animation: fadeIn 2.5s ease-in-out; /* Add a fade-in animation with a delay */
+}
+
+/* Add spacing between multiple h3 elements */
+.gallery-background h3:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Apply the custom font to both h1 and h3 */
+.gallery-background h1,
+.gallery-background h3 {
+  font-family: var(--font-playfair), serif; /* Use the custom Playfair font */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Reset position */
+  }
+}

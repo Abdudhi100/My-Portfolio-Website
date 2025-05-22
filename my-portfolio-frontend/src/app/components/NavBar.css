@@ -1,0 +1,52 @@
+/* Navbar background for the homepage */
+.navbar-homepage {
+  background-color: #140b29; /* Purple background for the homepage */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-homepage .nav-link {
+  color: #716992; /* White text for better visibility */
+  font-size: 1.2rem; /* Adjust font size for readability */
+  font-weight: 500; /* Slightly bold text */
+}
+
+.navbar-homepage .nav-link:hover {
+  color: #d1b3ff; /* Light purple color on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Navbar background for other pages */
+.navbar-other {
+  background-color: #140b29; /* Dark blue background for other pages */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-other .nav-link {
+  color: #ffffff; /* White text for better visibility */
+  font-size: 1.2rem; /* Adjust font size for readability */
+  font-weight: 500; /* Slightly bold text */
+}
+
+.navbar-other .nav-link:hover {
+  color: #66b2ff; /* Light blue color on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Navbar brand (logo or title) */
+.navbar-brand {
+  color: #ffffffb0 !important; /* Ensure the brand text is white */
+  font-size: 1.5rem; /* Adjust font size for prominence */
+  font-weight: 700; /* Bold text for emphasis */
+}
+
+.navbar-brand:hover {
+  color: #d1b3ff; /* Light purple color on hover for the homepage */
+}

@@ -1,0 +1,59 @@
+.project-list-background {
+  background-color: #f5f5f5; /* Light gray background for better contrast */
+  padding: 40px 20px; /* Add padding for spacing */
+  min-height: 100vh; /* Ensures the section covers the full viewport height */
+}
+
+.project-card {
+  background: #ffffff; /* White background for the cards */
+  border: 1px solid #ddd; /* Light border for subtle separation */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin: 25px; /* Space between cards */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+  max-height: 700px; /* Adjust height for consistency */
+  object-fit: contain; /* Ensure the image fits without distortion */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  font-size: 1.25rem; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #333; /* Darker text for better readability */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666; /* Medium gray for secondary text */
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  margin-top: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,101 @@
+.education-list-background {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.education-card,
+.certificate-card,
+.experience-card,
+.skill-card,
+.contact-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 5px;
+}
+
+.education-card h3,
+.certificate-card h3,
+.experience-card h3,
+.skill-card h3,
+.contact-card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.education-card p,
+.certificate-card p,
+.experience-card p,
+.skill-card p,
+.contact-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.certificate-card img {
+  width: 150%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+/* Style for the education section */
+.education-list-background {
+  background-color: #f9f9f9; /* Light background for better contrast */
+  padding: 50px 20px;
+}
+
+.education-card {
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.education-card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.education-card h3 {
+  font-size: 1.5rem; /* Larger font size for headings */
+  font-weight: bold;
+  color: #140b29; /* Darker text for better readability */
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  font-size: 1.1rem; /* Slightly larger font size for paragraphs */
+  color: #140b29; /* Softer text color */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 10px;
+}
+
+.education-card strong {
+  color: #140b29; /* Highlight institution name in blue */
+}
+
+.education-card:first-child {
+  border: 2px solid #140b29; /* Highlight the first card */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
