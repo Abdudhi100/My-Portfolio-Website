@@ -55,11 +55,11 @@ export default function EducationList() {
     const fetchData = async () => {
       try {
         const [eduResponse, certResponse, expResponse, skillResponse, contactResponse] = await Promise.all([
-          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/education/'),
-          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/certificates/'),
-          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/experience/'),
-          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/skills/'),
-          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/contacts/'),
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/education/`),
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/certificates/`),
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/experience/`),
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/skills/`),
+          fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contacts/`),
         ]);
 
         const eduData = await eduResponse.json();
