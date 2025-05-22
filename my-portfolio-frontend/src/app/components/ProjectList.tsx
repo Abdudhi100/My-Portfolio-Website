@@ -16,7 +16,7 @@ export default function ProjectList() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/api/projects/')
+    fetch('${process.env.NEXT_PUBLIC_API_URL}/api/projects/')
       .then((res) => res.json())
       .then((data: Project[]) => {
         setProjects(data)

@@ -55,11 +55,11 @@ export default function EducationList() {
     const fetchData = async () => {
       try {
         const [eduResponse, certResponse, expResponse, skillResponse, contactResponse] = await Promise.all([
-          fetch('http://127.0.0.1:8000/api/education/'),
-          fetch('http://127.0.0.1:8000/api/certificates/'),
-          fetch('http://127.0.0.1:8000/api/experience/'),
-          fetch('http://127.0.0.1:8000/api/skills/'),
-          fetch('http://127.0.0.1:8000/api/contacts/'),
+          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/education/'),
+          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/certificates/'),
+          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/experience/'),
+          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/skills/'),
+          fetch('${process.env.NEXT_PUBLIC_API_URL}/api/contacts/'),
         ]);
 
         const eduData = await eduResponse.json();
