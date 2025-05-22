@@ -16,7 +16,7 @@ interface Certificate {
   title: string;
   issuer: string;
   year: string;
-  image_url?: string; // For certificate images
+  certificate_image?: string; // For certificate images
   pdf_file?: string; // For certificate PDFs
 }
 
