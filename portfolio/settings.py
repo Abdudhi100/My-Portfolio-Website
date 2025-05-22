@@ -57,7 +57,7 @@ MIDDLEWARE = [
     
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+
 ROOT_URLCONF = 'portfolio.urls'
 CORS_ALLOWED_ORIGINS = [
     "https://my-portfolio-website-qaw4.vercel.app",
